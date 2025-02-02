@@ -1,0 +1,25 @@
+coder_pro_task:
+  description: >
+    Read and understand the given problem statement, input, output, and test cases from the file
+    Generate Python code that passes all the provided test cases.
+  expected_output: >
+    Complete, error-free Python code that satisfies the problem statement 
+    and passes all test cases.
+  agent: coder_pro
+
+code_completor_task:
+  description: >
+    Read and understand the test cases provided in the file.
+    Generate three additional test cases to validate the Python code.
+    Run the provided Python code (from the coder_pro agent) and ensure it 
+    passes all the test cases, including the newly generated ones.
+  expected_output: >
+    Error-free Python code that satisfies all the provided and generated test cases.
+  agent: code_completor
+
+code_writer_task:
+  description: >
+    Write the error-free Python code provided by the code_completor agent into a Python file.
+  expected_output: >
+    A Python file containing the errorless code.
+  agent: code_writer
