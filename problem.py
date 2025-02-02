@@ -1,4 +1,4 @@
-```python
+
 def print_formatted(number):
     width = len(bin(number)) - 2  # Calculate width based on the binary representation of the number
     formatted_output = []
@@ -17,4 +17,3 @@ results = {n: print_formatted(n) for n in test_cases}
 # Print the results for each test case
 for n, result in results.items():
     print(f"Test case for number {n}:\n{result}\n")
-```
